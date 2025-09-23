@@ -506,6 +506,7 @@ img {
   visibility: visible;
   pointer-events: auto;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -531,8 +532,13 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
-  border: none;
+  border: 50%;
+  border-radius: 50%;
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.2s;
 }
 .modal-title {
   margin-top: 10px;
@@ -547,4 +553,52 @@ img {
   height: 58px;
   background-color: transparent;
   border-radius: 4px;
+  padding-left: 38px;
+  padding-right: 16px;
+  outline: transparent;
+  transition: 0.3s stroke linear;
+}
+.modal-imput:focus {
+  border-color: #4d5ae5;
+}
+.modal-imput:focus + .input-icon {
+  fill: #4d5ae5;
+}
+
+.modal-input-label {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 8px;
+}
+.modal-field {
+  margin-bottom: 8px;
+}
+.input-wrapper {
+  position: relative;
+}
+.input-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 22px 24px;
+  outline: transparent;
+  transition: 0.3s stroke linear;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  resize: none;
 }
