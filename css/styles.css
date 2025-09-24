@@ -601,14 +601,38 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  background: transparent;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s, transform 0.2s;
+
+  background-color: #e7e9fc; /* 🔹 обязательный фон */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* 🔹 обязательный бордер */
+  border-radius: 50%;
+
+  padding: 0; /* 🔹 сброс отступов браузера */
+  cursor: pointer; /* 🔹 курсор-рука */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); /* 🔹 плавный переход */
+}
+.modal-close:hover {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-close-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* плавная смена цвета */
 }
 
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: #ffffff; /* при ховере/фокусе иконка становится белой */
+}
 .modal-title {
   margin-top: 10px;
   font-size: 14px;
