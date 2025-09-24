@@ -156,6 +156,7 @@ img {
 .hiro-btn-order:hover,
 :focus {
   background-color: #404bbf;
+  cursor: pointer;
 }
 
 .hero-title {
@@ -757,4 +758,5 @@ img {
 .modal-button:hover,
 .modal-button:focus {
   background-color: #404bbf;
+  cursor: pointer;
 }
