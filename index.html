@@ -485,14 +485,17 @@
               </a>
             </li>
           </ul>
-          <div>
-            <p>Subscribe</p>
+
+          <div class="footer-subscribe">
+            <p class="footer-subscribe-title">Subscribe</p>
+
             <form class="footer-form">
-              <label aria-label="footer-email"
-                ><input
-                  type="Subscribe"
+              <label class="footer-label">
+                <input
+                  type="email"
                   placeholder="E-mail"
                   class="footer-input"
+                  required
               /></label>
 
               <button type="submit" class="footer-form-btn">
@@ -507,7 +510,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-icon" width="24" height="24">

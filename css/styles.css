@@ -485,10 +485,18 @@ img {
   height: 24px;
   fill: var(--light, #f4f4fd);
 }
+.footer-subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 .footer-form {
   display: flex;
-  align-items: center;
-  gap: 8px;
+
+  gap: 24px;
 }
 .footer-form-btn {
   border-radius: 4px;
@@ -504,15 +512,47 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
-.footer-input {
-  border: 1px solid #fff;
+.footer-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
   border-radius: 4px;
+}
+
+.footer-btn-icon {
+  margin-left: 16px;
+}
+.footer-label {
+  display: block;
+}
+.footer-input {
   width: 264px;
   height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
   background-color: transparent;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.footer-input::placeholder {
+  color: #ffffff;
+}
+
 /*-----------------modal----------------*/
 
 .backdrop {
